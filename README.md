@@ -6,6 +6,8 @@ Mind Forge is an OpenCode plugin that turns documents (PDFs, DOCX files, Markdow
 
 > **Status:** MVP implemented. The full pipe — ingest → embed → graph → study — is functional.
 
+[![CI](https://github.com/goncalompontes/mind-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/goncalompontes/mind-forge/actions/workflows/ci.yml)
+
 ---
 
 ## Quick Start
