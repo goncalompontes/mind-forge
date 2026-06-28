@@ -1,0 +1,44 @@
+{
+  "name": "mind-forge",
+  "version": "0.1.0",
+  "description": "MCP plugin for deep study — ingest, query, and generate study materials from documents",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "@mozilla/readability": "^0.6.0",
+    "@opencode-ai/plugin": "^1.17.3",
+    "@opencode-ai/sdk": "^1.17.3",
+    "@types/jsdom": "^28.0.3",
+    "better-sqlite3": "^11.8.1",
+    "gray-matter": "^4.0.3",
+    "jsdom": "^29.1.1",
+    "mammoth": "^1.9.0",
+    "ollama": "^0.5.14",
+    "pdf-parse": "^1.1.1",
+    "sqlite-vec": "^0.1.6",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.14.1",
+    "@vitest/coverage-v8": "^3.1.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  }
+}
