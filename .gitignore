@@ -4,22 +4,7 @@ dist/
 *.log
 .DS_Store
 coverage/
-test.txt
+*.session.md
 *.db
 *.db-wal
 *.db-shm
-
-# Dev / AI
-.opencode/
-.flowdeck/
-.planning/
-.plan/
-.codebase/
-.codegraph/
-.harness-memory/
-.open-memory/
-.cartog/
-STATE.md
-PLAN.md
-DONE.md
-*.session.md
