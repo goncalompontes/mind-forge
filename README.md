@@ -6,29 +6,39 @@ Mind Forge is an OpenCode plugin that turns documents (PDFs, DOCX files, Markdow
 
 > **Status:** MVP implemented. The full pipe — ingest → embed → graph → study — is functional.
 
-[![CI](https://github.com/goncalompontes/mind-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/goncalompontes/mind-forge/actions/workflows/ci.yml)
+<p align="center">
+  <a href="https://github.com/goncalompontes/mind-forge/actions/workflows/ci.yml">
+    <img src="https://github.com/goncalompontes/mind-forge/actions/workflows/ci.yml/badge.svg" alt="CI">
+  </a>
+  <a href="https://github.com/goncalompontes/mind-forge/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/version-0.1.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/coverage-90%25-brightgreen.svg" alt="Coverage">
+</p>
 
 ---
 
 ## Quick Start
 
 ```bash
-# 1. Install
-npm install @mind-forge/plugin
-
-# 2. Build
+# 1. Clone and install
+git clone https://github.com/goncalompontes/mind-forge.git
+cd mind-forge
+npm install
 npm run build
 
-# 3. Register in opencode.json
+# 2. Register in your OpenCode config
 ```
 
 Add to your `opencode.json`:
 
 ```json
 {
-  "plugins": {
+  "mcpServers": {
     "mind-forge": {
-      "enabled": true
+      "command": "node",
+      "args": ["/path/to/mind-forge/dist/index.js"]
     }
   }
 }
