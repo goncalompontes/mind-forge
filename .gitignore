@@ -8,3 +8,13 @@ coverage/
 *.db
 *.db-wal
 *.db-shm
+.codebase/
+.codegraph/
+.flowdeck/
+.planning/
+.plan/
+.harness-memory/
+.open-memory/
+.cartog/
+STATE.md
+PLAN.md
