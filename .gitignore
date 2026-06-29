@@ -4,3 +4,7 @@ dist/
 *.log
 .DS_Store
 coverage/
+test.txt
+*.db
+*.db-wal
+*.db-shm
